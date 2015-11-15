@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>crud</title>
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <div class="sign-container container">
+      <div class="sign-box">
+        <p>SIGN IN</p>
+        <form>
+          <div>username</div>
+          <input id="nameSignin" type="text" name="username" placeholder="username">
+          <div>password</div>
+          <input id="pwdSignin" type="password" name="password" placeholder="password">
+          <div class="note-signin note"></div>
+          <div>
+            <button type="submit" id="signinBtn">sign in</button>
+          </div>
+        </form>
+      </div>
+      <div class="sign-box left-line">
+        <p>SIGN UP</p>
+        <form>
+          <div>username</div>
+          <input id="nameSignup" type="text" name="username" placeholder="username">
+          <div>password</div>
+          <input id="pwdSignup" type="password" name="password" placeholder="password">
+          <div>repassword</div>
+          <input id="repwdSignup" type="password" name="repassword" placeholder="repassword">
+          <div class="note-signup note"></div>
+          <div>
+            <button type="submit" id="signupBtn">sign up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <script src="/js/lib/jquery-2.1.4.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+body {
+  padding-left: 100px;
+  padding-right: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.note {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.title {
+  position: relative;
+  border-bottom: 1px solid black;
+  /*padding-bottom: 1px;*/
+  margin-bottom: 1px;
+  /*vertical-align: bottom;*/
+}
+
+.title span {
+  position: absolute;
+  right: 20px;
+  bottom: 2px;
+  /*font-size: 14px;*/
+}
+
+.h1 {
+  /*margin-bottom: 0;*/
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.list-container {
+  width: 30%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tr-active {
+  background-color: #eee;
+}
+
+.clear-active {
+  color: #AF5B5E;
+}
+
+table tr:first-child {
+  /*background-color: #eee;*/
+  border-bottom: 1px solid black;
+}
+table tr:first-child td:first-child:after {
+  content: '(* is Admin)';
+  position: absolute;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.list-item td {
+  position: relative;
+}
+
+.admin:after {
+  content: '*';
+  position: absolute;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.edit {
+  /*display: none;*/
+  position: absolute;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.clear {
+  /*display: none;*/
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 17px;
+  color: #cc9a9a;
+  cursor: default;
+}
+
+.clear:hover {
+  color: #AF5B5E;
+}
+
+.list-item td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sign-container {
+  width: 40%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sign-box {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 70px;
+  padding-right: 70px;
+  /*text-align: center;*/
+}
+
+.left-line {
+  border-left: 1px solid black;
+}
+
+.sign-box p {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sign-box button:hover {
+  background-color: #ddd;
+}
+
+.sign-box button {
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.sign-box div:last-child {
+  margin-top: 25px;
+  text-align: center;
+}

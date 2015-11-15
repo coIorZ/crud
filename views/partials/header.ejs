@@ -1,0 +1,14 @@
+<div class="header">
+	<div class="title">
+		<a href="/" class="h1">CRUD Management</a>
+		<span>
+		<% if(typeof user != 'undefined') { %>
+		<strong><%= user.username %></strong>, 
+		<a href="/logout">logout</a>
+		<% } else { %>
+		<a href="/login">sign in/up</a>
+		<% } %>
+		</span>
+	</div>
+	<div>nodejs+express+mongoose demo</div>
+</div>

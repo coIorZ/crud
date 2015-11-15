@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>crud</title>
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <div class="list-container container">
+      <table>
+        <tr>
+          <td style="width:50%;">username</td>
+          <td style="width:50%;">password</td>
+        </tr>
+        <% for(var i = 0; i < list.length; i++) { %>
+        <tr class="list-item">
+          <td>
+            <span class="<%= list[i].isAdmin ? 'admin' : '' %>"><%= list[i].username %></span>
+            <% if(typeof user != 'undefined' && user.isAdmin) { %>
+            <input class="edit" data-id="<%= list[i].id %>" data-type="username" type="text">
+            <% } %>
+          </td>
+          <td>
+            <span><%= list[i].password %></span>
+            <% if(typeof user != 'undefined' && user.isAdmin) { %>
+            <input class="edit" data-id="<%= list[i].id %>" data-type="password" type="text">
+            <a href="/delete/<%= list[i].id %>" class="clear">×</a>
+            <% } %>
+          </td>
+        </tr>
+        <% } %>
+      </table>
+    </div>
+    
+    <script src="/js/lib/jquery-2.1.4.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
